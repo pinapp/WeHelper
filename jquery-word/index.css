@@ -1,0 +1,155 @@
+.header {
+	background-color: #ebedeb;
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+}
+
+.header img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.header .ext {
+	display: flex;
+	margin-left: 24px;
+	margin-right: 12px;
+}
+
+.header .ext .item {
+	margin-right: 12px;
+	font-size: 12px;
+}
+
+.header .layout {
+	display: flex;
+	border: 1px solid #c8c9cc;
+	font-size: 14px;
+}
+
+.header .layout .item {
+	padding: 4px 12px;
+	background: #f4f4f5;
+	cursor: pointer;
+}
+
+.header .layout .item-active {
+	background: #c8c9cc;
+}
+
+.content {
+	margin-top: 12px;
+}
+
+.bottomBar .title {
+	margin-top: 8px;
+}
+
+.leftBar {
+	margin-right: 12px;
+}
+
+.bottomBar .title {
+	margin-bottom: 4px;
+}
+
+.leftBar .title, .topBar .title {
+	margin-bottom: 4px;
+}
+
+.item .title {
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+
+.content .key {
+	border: 1px solid darkgray;
+	width: 100%;
+	overflow: hidden;
+	padding: 6px 5px;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+.content .key .item {
+	flex: none;
+	width: fit-content;
+}
+.content .word {
+	display: flex;
+	coursor: none;
+	letter-spacing: 1px;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+.content .page {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 8px;
+}
+
+.content .item {
+	border: 1px solid darkgray;
+	border-radius: 4px;
+	padding: 2px 8px;
+	font-size: 10px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.content input {
+	width: 100%;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+.dev-box {
+	margin-left: 24px;
+}
+
+.content {
+	padding: 0 12px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.tools {
+	display: flex;
+	justify-content: end;
+	margin-top: 8px;
+}
+
+.tools-option {
+	display: flex;
+	align-items: center;
+}
+
+.tools-option .label {
+	margin-right: 4px;
+}
+
+.tools-option .time {
+	color: yellowgreen;
+}
+.tools-option:not(:last-child) {
+	margin-right: 8px;
+}
+
+.option-item {
+	border: 1px solid grey;
+	padding: 0px 4px;
+	border-radius: 2px;
+	margin-right: 8px;
+	cursor: pointer;
+	user-select: none;
+}

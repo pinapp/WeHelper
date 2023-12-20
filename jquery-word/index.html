@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在线打字工具</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./style/basic.css" type="text/css">
+		<script type="text/javascript" src="/static/js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<img src="../static/logo.png"/>
+			<div class="name">WebHelper：</div>
+			<div class="desc">金山打字简易版/在线打字工具</div>
+			
+			<div class="ext">
+				<select id="exampleDemo">
+					<option value="1.xml">示例1：2000个最常用单词1</option>
+					<option value="2.xml">示例2：2000个最常用单词2</option>
+					<option value="3.xml">示例3：2000个最常用单词3</option>
+					<option value="4.xml">示例4：2000个最常用单词4</option>
+					<option value="5.xml">示例5：2000个最常用单词5</option>
+					<option value="6.xml">示例6：2000个最常用单词6</option>
+					<option value="7.xml">示例7：2000个最常用单词7</option>
+					<option value="8.xml">示例8：2000个最常用单词8</option>
+					<option value="9.xml">示例9：小学英语单词1</option>
+					<option value="10.xml">示例10：小学英语单词2</option>
+					<option value="11.xml">示例11：小学英语单词</option>
+					<option value="12.xml">示例12：初中英语单词1</option>
+					<option value="13.xml">示例13：初中英语单词2</option>
+					<option value="14.xml">示例14：初中英语单词3</option>
+					<option value="15.xml">示例15：初中英语单词4</option>
+					<option value="16.xml">示例16：初中英语单词5</option>
+					<option value="17.xml">示例17：初中英语单词6</option>
+					<option value="18.xml">示例18：初中英语单词7</option>
+					<option value="19.xml">示例19：初中英语单词8</option>
+					<option value="20.xml">示例20：初中英语单词9</option>
+					<option value="21.xml">示例21：高中英语单词1</option>
+					<option value="22.xml">示例22：高中英语单词2</option>
+					<option value="23.xml">示例23：高中英语单词3</option>
+					<option value="24.xml">示例24：高中英语单词4</option>
+					<option value="25.xml">示例25：高中英语单词5</option>
+					<option value="26.xml">示例26：高中英语单词6</option>
+					<option value="27.xml">示例27：高中英语单词7</option>
+					<option value="28.xml">示例28：高中英语单词8</option>
+					<option value="29.xml">示例29：高中英语单词9</option>
+					<option value="30.xml">示例30：高中英语单词10</option>
+					<option value='31.xml'>示例31：大学英语四级词汇1</option>
+					<option value='32.xml'>示例32：大学英语四级词汇2</option>
+					<option value='33.xml'>示例33：大学英语四级词汇3</option>
+					<option value='34.xml'>示例34：大学英语四级词汇4</option>
+					<option value='35.xml'>示例35：大学英语四级词汇5</option>
+					<option value='36.xml'>示例36：大学英语四级词汇6</option>
+					<option value='37.xml'>示例37：大学英语四级词汇7</option>
+					<option value='38.xml'>示例38：大学英语四级词汇8</option>
+					<option value='39.xml'>示例39：大学英语四级词汇9</option>
+					<option value='40.xml'>示例40：大学英语四级词汇10</option>
+					<option value='41.xml'>示例41：大学英语四级词汇11</option>
+					<option value='42.xml'>示例42：大学英语四级词汇12</option>
+					<option value='43.xml'>示例43：大学英语四级词汇13</option>
+					<option value='44.xml'>示例44：大学英语四级词汇14</option>
+					<option value='45.xml'>示例45：大学英语四级词汇15</option>
+					<option value='46.xml'>示例46：大学英语四级词汇16</option>
+					<option value='47.xml'>示例47：大学英语四级词汇17</option>
+					<option value='48.xml'>示例48：大学英语四级词汇18</option>
+					<option value='49.xml'>示例49：大学英语四级词汇19</option>
+					<option value='50.xml'>示例50：大学英语六级词汇1</option>
+					<option value='51.xml'>示例51：大学英语六级词汇2</option>
+					<option value='52.xml'>示例52：大学英语六级词汇3</option>
+					<option value='53.xml'>示例53：大学英语六级词汇4</option>
+					<option value='54.xml'>示例54：大学英语六级词汇5</option>
+					<option value='55.xml'>示例55：大学英语六级词汇6</option>
+					<option value='56.xml'>示例56：大学英语六级词汇7</option>
+				</select>
+
+				<div class="dev-box">
+					<a class="item devExample" href="#" value="uniapp.txt">示例1：Uniapp开发常用词汇</a>
+					<!-- <a class="item devExample" href="#" value="微信小程序.txt">示例2：微信小程序开发常用词汇</a> -->
+				</div>
+				<!-- <select id="devDemo">
+					<option value="">请选择</option>
+					<option value="uniapp.txt">Uniapp开发常用词汇</option>
+					<option value="微信小程序.txt">微信小程序开发常用词汇</option>
+					<option value="vue3.txt">Vue3.x开发常用词汇</option>
+					<option value="vue2.txt">Vue2.x开发常用词汇</option>
+					
+					<option>ThinkPHP6.x开发常用词汇</option>
+					<option>ThinkPHP5.x开发常用词汇</option>
+					<option>ThinkPHP3.x开发常用词汇</option>
+					<option>Laravel10.x开发常用词汇</option>
+					<option>Mysql5.x开发常用词汇</option> 
+				</select> -->
+			</div>
+		</div>
+		
+		<!-- 打字工具开始 -->
+		<div class="content">
+			<div class="page">
+				<div class="item" id="next">下一页</div>
+			</div>
+			<div class="key">
+				<input class="word" id="wordText"  value="" readonly />
+				<input class="input" id="wordInput"/>
+			</div>
+			
+			<div class="tools">
+				<div class="tools-option">
+					<div class="label">时间:</div>
+					<div class="time"><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span></div>
+				</div>
+				<div class="tools-option">
+					<div class="option-item reloadTools">重新</div>
+					<!-- startTools -->
+					<div class="option-item stopTools tools-item">暂停</div>
+				</div>
+			</div> 
+			
+		</div>
+		<!-- 打字工具结束 -->
+	</body>
+</html>
