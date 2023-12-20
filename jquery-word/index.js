@@ -13,6 +13,14 @@ $(function() {
 	
 	startInterval()
 	
+	$(document).keydown(function (event) {
+	    if (event.which === 37) {  // 按下了左键
+			$("#wordText").scrollLeft($("#wordText").scrollLeft() - 1)
+	    } else if (event.which === 39) { // 按下了右键
+	        $("#wordText").scrollLeft($("#wordText").scrollLeft() + 1)
+	    }
+	});
+	
 	function startInterval() {
 		window._interval = setInterval(function() {
 			second++
