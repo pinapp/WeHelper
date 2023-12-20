@@ -116,8 +116,8 @@ $(function() {
 	$("#next").click(function() {
 		const left = window.next * $("#wordText").width()
 		
-		console.log(window.left) // 1244
-		console.log($("#wordText").scrollLeft()) // 1240
+		console.log(window.left)
+		console.log($("#wordText").scrollLeft())
 		
 		if(window.left - $("#wordText").scrollLeft() > 10) {
 		} else {
