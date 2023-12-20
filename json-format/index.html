@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FeHelper：JSON格式化 </title>
+		<script src="/static/js/jquery-1.7.2.js"></script>
+		<script src="index.js"></script>
+		<script src="c.js" type="text/javascript"></script>
+<link href="s.css" type="text/css" rel="stylesheet"/>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.header {
+				background: #ebedeb;
+				padding: 12px 24px;
+				display: flex;
+				align-items: center;
+			}
+			.header .logo-box {
+				display: flex;
+				align-items: center;
+			}
+			.header .logo-box img {
+				width: 20px;
+				height: 20px;
+				margin-right: 8px;
+			}
+			.header .layout {
+				display: flex;
+			}
+			.header .ext {
+				margin-left: 24px;
+			}
+			.ext .item {
+				margin-right: 12px;
+			}
+			.layout {
+				margin-left: 24px;
+			}
+			.layout .item {
+				background: #999;
+				padding: 8px 10px;
+				border: 1px solid #999;
+				cursor: pointer;
+			}
+			.header .layout .item-active {
+				background: #666;
+				border-color: #666 !impartant;
+			} 
+			.content {
+				padding: 0 24px;
+			}
+			.Canvas {
+				margin: 6px 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo-box">
+				<img src="../static/logo.png" />
+				<div class="name">FeHelper：</div>
+			</div>
+			<div class="name">JSON格式化</div>
+			
+			<div class="ext">
+				<a href="javascript:void(0);" class="item" id="extJsonDemo">示例1：JSON片段</a>
+				<a href="https://www.baidufe.com/fehelper/index/json-demo.json" target="_blank" class="item">示例2：在线JSON </a>
+			</div>
+			
+			<!--
+			<div class="layout">
+				<div class="item item-active">左右布局</div>
+				<div class="item">上下布局</div>
+			</div>
+			-->
+		</div>
+		<!-- JSON解析工具开始 -->
+		<div class="content">
+			<div class="HeadersRow">
+			  <div id="HeaderTitle"> JSON格式化及高亮 &nbsp;&copy;&nbsp;2016&nbsp; &nbsp;<span style="color:#aaa;font-weight:bold;font-style:italic">Xunqf</span> </div>
+			  <h3 id="HeaderSubTitle">JSON格式化及高亮:</h3>
+			  <textarea id="RawJson"></textarea>
+			</div>
+			<div id="ControlsRow">
+			  <input type="Button" value="格式化" id="Process" />
+			  <span id="TabSizeHolder">
+				缩进量
+				<!-- onchange="TabSizeChanged()" -->
+				<select id="TabSize">
+				  <option value="1">1</option>
+				  <option value="2" selected="true">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5">5</option>
+				  <option value="6">6</option>
+				</select>
+			  </span>
+			  <label for="QuoteKeys">
+				  <!-- onclick="QuoteKeysClicked()" -->
+				<input type="checkbox" id="QuoteKeys" checked="true" /> 
+				引号
+			  </label>&nbsp; 
+			  <!--  onclick="SelectAllClicked()" -->
+			  <a href="javascript:void(0);" id="SelectAllClicked">全选</a>
+			  &nbsp;
+			  <span id="CollapsibleViewHolder" >
+				  <label for="CollapsibleView">
+					  <!-- onclick="CollapsibleViewClicked()" -->
+					<input type="checkbox" id="CollapsibleView" checked="true" /> 
+					显示控制
+				  </label>
+			  </span>
+			  <span id="CollapsibleViewDetail">
+				<a href="javascript:void(0);" id="ExpandAllClicked">展开</a>
+				<a href="javascript:void(0);" id="CollapseAllClicked">叠起</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="3">2级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="4">3级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="5">4级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="6">5级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="7">6级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="8">7级</a>
+				<a href="javascript:void(0);" class="CollapseLevel" level="9">8级</a>
+			  </span>
+			</div>
+		</div>
+		<!-- JSON解析工具结束 -->
+		<div id="Canvas" class="Canvas"></div>
+		<script type="text/javascript" src="m.js"></script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "WeHelper助手",
+	"description": "WeHelper助手",
+	"version": "1.0",
+	"permissions": [
+		"tabs",
+		"scripting",
+		"activeTab",
+		"storage"
+	],
+	"browser_action": {
+	  "default_icon": "/static/logo.png",
+	  "default_popup": "popup.html"
+	},
+	// 网站拦截注入
+	"content_scripts": [
+		{
+			// 匹配地址
+			"matches": ["<all_urls>"],
+			// 注入JS
+			"js": ["/static/js/jquery-1.7.2.js","json-format/c.js","app.js"],
+			// 运行文档后
+			"run_at": "document_end",
+			// 注入css
+			"css": ["json-format/s.css"]
+		}
+	]
+}

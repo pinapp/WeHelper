@@ -1,0 +1,105 @@
+.header {
+	background-color: #ebedeb;
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+}
+
+.header img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.header .ext {
+	display: flex;
+	margin-left: 24px;
+	margin-right: 12px;
+}
+
+.header .ext .item {
+	margin-right: 12px;
+	font-size: 12px;
+}
+
+.header .layout {
+	display: flex;
+	border: 1px solid #c8c9cc;
+	font-size: 14px;
+}
+
+.header .layout .item {
+	padding: 4px 12px;
+	background: #f4f4f5;
+	cursor: pointer;
+}
+
+.header .layout .item-active {
+	background: #c8c9cc;
+}
+
+.content {
+	margin: 0 12px;
+}
+
+.bottomBar .title {
+	margin-top: 8px;
+}
+
+.leftBar {
+	margin-right: 12px;
+}
+
+.bottomBar .title {
+	margin-bottom: 4px;
+}
+
+.leftBar .title, .topBar .title {
+	margin-bottom: 4px;
+}
+
+.content {
+	margin-top: 12px;
+	display: flex;
+}
+
+.content .item {
+	flex: 1;
+	width: 50%;
+}
+.item .title {
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+.left {
+	margin-right: 12px;
+	border-radius: 4px;
+}
+.right #myframe {
+	background-color: #ECECEC;
+	color: #000000;
+	border: solid 1px #CECECE;
+	border-radius: 4px;
+	height: 100vh;
+}
+.content .item textarea {
+	width: 100%;
+	border-radius: 4px;
+	height: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+	border: none;
+	height: 100vh;
+	box-sizing: border-box;
+	outline: 0;
+	border: 1px solid #ccc;
+}
+
+#myframe {
+	padding: 12px;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border: none;
+	margin: 0;
+}

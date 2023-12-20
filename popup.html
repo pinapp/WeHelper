@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="/static/js/jquery-1.7.2.js"></script>
+		<script src="menu.js"></script>
+		<script src="popup.js"></script>
+		<title></title>
+		<style>
+			.list {
+				width: 120px;
+			}
+			.list .item {
+				display: flex;
+				align-items: center;
+				padding: 8px 0;
+				position: relative;
+				cursor: pointer;
+				user-select: none;
+			}
+			.list .item:not(:last-child)::after {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 1px;
+				background-color: #ebedf0;
+				transform: scaleY(.5);
+				content: "";
+				display: block;
+			}
+			.list .item img {
+				width: 20px;
+				height: 20px;
+				padding-right: 8px;
+			}
+			.item .title {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				width: 100%;
+				text-wrap: nowrap;
+			}
+			.item .item-row {
+				display: flex;
+				align-items: center;
+			}
+			.item .item-row img {
+				width: 15px;
+				height: 15px;
+				padding: 0;
+				margin-right: 4px;
+			}
+			.item .item-row:not(:last-child) {
+				margin-right: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="list">
+			<div id="tools">
+				
+			</div>
+			<div class="item">
+				<div class="item-row" href="https://github.com/pinapp/WeHelper">
+					<img src="static/logo.png" />
+					<span>反馈</span>
+				</div>
+				<div class="item-row" href="/setting/index.html">
+					<img src="static/logo.png" />
+					<span>设置</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

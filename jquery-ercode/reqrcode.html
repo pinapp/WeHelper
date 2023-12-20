@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.content-box {
+			margin: 24px;
+		}
+		.header {
+			background-color: #ebedeb;
+			display: flex;
+			align-items: center;
+			padding: 8px 12px;
+		}
+		
+		.header img {
+			width: 20px;
+			height: 20px;
+			margin-right: 8px;
+		}
+		
+		.header .ext {
+			display: flex;
+			margin-left: 24px;
+			margin-right: 12px;
+		}
+		
+		.header .ext .item {
+			margin-right: 12px;
+			font-size: 12px;
+		}
+		
+		.header .layout {
+			display: flex;
+			border: 1px solid #c8c9cc;
+			font-size: 14px;
+		}
+		
+		.header .layout .item {
+			padding: 4px 12px;
+			background: #f4f4f5;
+			cursor: pointer;
+		}
+		
+		.header .layout .item-active {
+			background: #c8c9cc;
+		}
+		
+		.content {
+			margin: 0 12px;
+		}
+		
+		.bottomBar .title {
+			margin-top: 8px;
+		}
+		
+		.leftBar {
+			margin-right: 12px;
+		}
+		
+		.bottomBar .title {
+			margin-bottom: 4px;
+		}
+		
+		.leftBar .title, .topBar .title {
+			margin-bottom: 4px;
+		}
+		
+		.content {
+			margin-top: 12px;
+			display: flex;
+		}
+		
+		.content .item {
+			flex: 1;
+			width: 50%;
+		}
+		.item .title {
+			margin-top: 12px;
+			margin-bottom: 8px;
+		}
+		.left {
+			margin-right: 12px;
+			border-radius: 4px;
+		}
+		.right #myframe {
+			background-color: #ECECEC;
+			color: #000000;
+			border: solid 1px #CECECE;
+			border-radius: 4px;
+			height: 100vh;
+		}
+		.content .item textarea {
+			width: 100%;
+			border-radius: 4px;
+			height: 100%;
+			padding: 12px;
+			box-sizing: border-box;
+			border: none;
+			height: 100vh;
+			box-sizing: border-box;
+			outline: 0;
+			border: 1px solid #ccc;
+		}
+		
+		#myframe {
+			padding: 12px;
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			border: none;
+			margin: 0;
+		}
+	</style>
+    <style>
+        #qrcode {
+            width:160px;
+            height:160px;
+            margin-top:15px;
+        } 
+        #text{
+            height: 23px;
+        }
+        #button{
+            height: 29px;
+        }
+    </style>
+    <title>生成二维码</title>
+    <script src="/static/js/jquery-1.7.2.js"></script>
+	<script src="/static/js/reqrcode.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<img src="../static/logo.png"/>
+		<div class="name">WebHelper：</div>
+		<div class="desc">解析二维码工具</div>
+		
+		<div class="ext">
+			<!-- <a class="item" href="#" id="Example1">示例1：HTML片段</a> -->
+			<!-- <a class="item" href="#" id="Example2">示例2：HTML片段</a> -->
+		</div>
+	</div>
+	
+	<div class="content-box">
+		 <div style="width:360px;height:360px;">
+		        <h2 style="margin-left: 30px;">解析二维码</h2>
+		        <input type="file" id="newfile" onchange="changepic(this)"></br>
+		        <img src="jx.png" id="img" />
+		        <h4>二维码地址:<span id="spantitle"></span></h4>
+		    </div>
+		    <h2><a href="./index.html">我要生成二维码</a></h2>
+	</div>
+</body>
+</html>
