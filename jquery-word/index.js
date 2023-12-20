@@ -57,6 +57,9 @@ $(function() {
 		$("#wordText").scrollLeft(0)
 		$("#wordInput").val("")
 		$("#wordInput").focus()
+		
+		window.next = 1
+		window.left = -999
 	})
 	
 	// 点击
@@ -108,13 +111,23 @@ $(function() {
 	}
 	
 	window.next = 1
+	window.left = -999
 	
 	$("#next").click(function() {
-		$("#wordText").scrollLeft(window.next * $("#wordText").width())
-		window.next++
+		const left = window.next * $("#wordText").width()
 		
-		$("#wordInput").val("")
-		$("#wordInput").focus()
+		console.log(window.left) // 1244
+		console.log($("#wordText").scrollLeft()) // 1240
+		
+		if(window.left - $("#wordText").scrollLeft() > 10) {
+		} else {
+			$("#wordText").scrollLeft(left)
+			window.left = left
+			window.next++
+			
+			$("#wordInput").val("")
+			$("#wordInput").focus()
+		}
 	})
 
 	loadData("1.xml")
