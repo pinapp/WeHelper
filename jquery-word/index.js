@@ -60,6 +60,8 @@ $(function() {
 			$("#wordText").val(wordText)
 			$("#wordInput").val("")
 			$("#wordInput").focus()
+			
+			$(".reloadTools").click()
 		})
 	})
 	
@@ -91,6 +93,7 @@ $(function() {
 				
 				$("#wordText").val(wordText)
 				$("#wordInput").val("")
+				$(".reloadTools").click()
 				$("#wordInput").focus()
 			}
 		})
