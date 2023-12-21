@@ -1,0 +1,2 @@
+vite config js base plugin-vue define process env resolve store modules permission .env development
+ production npm install --registry=https://registry.npm.taobao.org cp -r -f dist/* ../backend/public/admin/
