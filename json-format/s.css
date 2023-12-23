@@ -1,23 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-div.ControlsRow, div.HeadersRow {
-	font-family: Georgia;
-}
-div.Canvas
-
-{
-
-  font-family: Lucida Console, Georgia;
-
-  font-size: 13px;
-
-	background-color:#ECECEC;
-
-	color:#000000;
-
-	border:solid 1px #CECECE;
-
-}
 
 .ObjectBrace
 
