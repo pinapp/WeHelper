@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "WeHelper助手",
-	"description": "WeHelper助手",
+	"name": "WeHelper开发助手",
+	"description": "WeHelper开发助手",
 	"version": "1.0",
 	"permissions": [
 		"tabs",
