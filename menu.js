@@ -1,13 +1,13 @@
 const menu = [
 	{
 		"title": "JSON美化工具",
-		"logo": "/static/logo.png",
+		"logo": "/static/json.png",
 		"href": "/json-format/index.html",
 		"name": "json-format"
 	},
 	{
 		"title": "HTML/CSS/JS 在线工具",
-		"logo": "/static/logo.png",
+		"logo": "/static/html.png",
 		"href": "/html-preview/index.html",
 		"name": "html-preview"
 	},
