@@ -13,13 +13,13 @@ const menu = [
 	},
 	{
 		"title": "生成/解码/二维码工具",
-		"logo": "/static/logo.png",
+		"logo": "/static/ercode.png",
 		"href": "/jquery-ercode/index.html",
 		"name": "jquery-ercode"
 	},
 	{
 		"title": "金山打字简易版/在线打字工具",
-		"logo": "/static/logo.png",
+		"logo": "/static/keyboard.png",
 		"href": "/jquery-word/index.html",
 		"name": "jquery-word"
 	}
